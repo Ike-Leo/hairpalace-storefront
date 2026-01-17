@@ -1,0 +1,232 @@
+{
+    "project_name": "Hair Palace E-commerce Storefront",
+    "industry": "E-commerce / Beauty & Hair Products",
+    "visual_description": {
+        "aesthetic": "Modern Minimalist / Clean Premium",
+        "color_palette": {
+            "primary": "#000000 (Onyx Black)",
+            "secondary": "#FFFFFF (Pure White)",
+            "background": "#F7F8FA (Ultra-Light Grey / Off-White)",
+            "accent": "#F0F0F0 (Soft Container Grey)",
+            "success": "#10B981 (Emerald Green)",
+            "warning": "#F59E0B (Amber)",
+            "error": "#EF4444 (Red)",
+            "external_branding": "#A5C7E9 (Soft Sky Blue - for promotional elements)"
+        },
+        "typography": {
+            "font_family": "Poppins, sans-serif",
+            "hierarchy": {
+                "h1": {
+                    "font_size": "2.5rem",
+                    "font_weight": "700",
+                    "line_height": "1.2",
+                    "use_case": "Page titles, Hero headlines"
+                },
+                "h2": {
+                    "font_size": "2rem",
+                    "font_weight": "600",
+                    "line_height": "1.3",
+                    "use_case": "Section headers, Product titles"
+                },
+                "h3": {
+                    "font_size": "1.5rem",
+                    "font_weight": "600",
+                    "line_height": "1.4",
+                    "use_case": "Card titles, Subsections"
+                },
+                "body": {
+                    "font_size": "1rem",
+                    "font_weight": "400",
+                    "line_height": "1.6",
+                    "use_case": "Product descriptions, Body text"
+                },
+                "caption": {
+                    "font_size": "0.875rem",
+                    "font_weight": "400",
+                    "line_height": "1.5",
+                    "use_case": "Metadata, Labels, Secondary info"
+                },
+                "price": {
+                    "font_size": "1.25rem",
+                    "font_weight": "700",
+                    "line_height": "1.2",
+                    "use_case": "Product prices, Cart totals"
+                }
+            }
+        },
+        "layout_characteristics": "Mobile-first responsive design, card-based product grid, rounded corners (16px for cards, 8px for buttons), floating cart icon, clean whitespace, minimal clutter"
+    },
+    "components": {
+        "header": {
+            "background": "#FFFFFF",
+            "height": "64px",
+            "shadow": "0 1px 3px rgba(0,0,0,0.1)",
+            "position": "sticky",
+            "top": "0",
+            "z_index": "50",
+            "elements": {
+                "logo": {
+                    "font_size": "1.5rem",
+                    "font_weight": "700",
+                    "color": "#000000"
+                },
+                "search_bar": {
+                    "background": "#F0F0F0",
+                    "border_radius": "8px",
+                    "padding": "0.5rem 1rem",
+                    "width": "100%",
+                    "max_width": "400px"
+                },
+                "cart_icon": {
+                    "badge_background": "#000000",
+                    "badge_color": "#FFFFFF",
+                    "badge_position": "top-right"
+                }
+            }
+        },
+        "product_card": {
+            "background": "#FFFFFF",
+            "border_radius": "16px",
+            "padding": "1rem",
+            "shadow": "0 1px 3px rgba(0,0,0,0.1)",
+            "hover_shadow": "0 4px 12px rgba(0,0,0,0.15)",
+            "transition": "all 0.2s ease",
+            "elements": {
+                "image": {
+                    "aspect_ratio": "1:1",
+                    "border_radius": "12px",
+                    "object_fit": "cover"
+                },
+                "title": {
+                    "font_size": "1rem",
+                    "font_weight": "600",
+                    "margin_top": "0.75rem"
+                },
+                "price": {
+                    "color": "#000000",
+                    "font_weight": "700"
+                },
+                "add_to_cart_button": {
+                    "background": "#000000",
+                    "color": "#FFFFFF",
+                    "border_radius": "8px",
+                    "padding": "0.5rem 1rem",
+                    "full_width": true
+                }
+            }
+        },
+        "button": {
+            "primary": {
+                "background": "#000000",
+                "color": "#FFFFFF",
+                "border_radius": "8px",
+                "padding": "0.75rem 1.5rem",
+                "font_weight": "600",
+                "hover_background": "#333333"
+            },
+            "secondary": {
+                "background": "#FFFFFF",
+                "color": "#000000",
+                "border": "1px solid #E5E7EB",
+                "border_radius": "8px",
+                "padding": "0.75rem 1.5rem",
+                "font_weight": "600",
+                "hover_background": "#F9FAFB"
+            },
+            "danger": {
+                "background": "#EF4444",
+                "color": "#FFFFFF",
+                "border_radius": "8px",
+                "padding": "0.5rem 1rem",
+                "font_weight": "500"
+            }
+        },
+        "cart_page": {
+            "layout": "two-column",
+            "elements": {
+                "items_list": {
+                    "background": "#FFFFFF",
+                    "border_radius": "16px",
+                    "padding": "1.5rem"
+                },
+                "order_summary": {
+                    "background": "#F9FAFB",
+                    "border_radius": "16px",
+                    "padding": "1.5rem",
+                    "position": "sticky",
+                    "top": "80px"
+                }
+            }
+        },
+        "checkout_form": {
+            "input": {
+                "background": "#FFFFFF",
+                "border": "1px solid #E5E7EB",
+                "border_radius": "8px",
+                "padding": "0.75rem",
+                "font_size": "1rem",
+                "focus_border": "#000000"
+            },
+            "label": {
+                "font_weight": "500",
+                "margin_bottom": "0.25rem",
+                "color": "#374151"
+            }
+        }
+    },
+    "spacing": {
+        "xs": "0.25rem",
+        "sm": "0.5rem",
+        "md": "1rem",
+        "lg": "1.5rem",
+        "xl": "2rem",
+        "2xl": "3rem",
+        "3xl": "4rem"
+    },
+    "breakpoints": {
+        "mobile": "640px",
+        "tablet": "768px",
+        "desktop": "1024px",
+        "wide": "1280px"
+    },
+    "ui_ux_expert_analysis": {
+        "visual_hierarchy": {
+            "score": 9.0,
+            "analysis": "Clean hierarchy with bold product titles and prices. High contrast black on white ensures readability. Cart badge provides immediate visual feedback."
+        },
+        "interaction_design": {
+            "key_elements": [
+                {
+                    "component": "Product Cards",
+                    "ux_strength": "Quick scanning with image, title, price visible. Hover effects indicate interactivity. Add to cart prominent and accessible."
+                },
+                {
+                    "component": "Cart Badge",
+                    "ux_strength": "Persistent cart count in header keeps users aware of cart state without navigating away."
+                },
+                {
+                    "component": "Mobile Menu",
+                    "ux_strength": "Collapsible navigation for mobile, hamburger menu in thumb-zone for easy access."
+                }
+            ]
+        },
+        "information_architecture": {
+            "strategy": "Progressive Disclosure",
+            "analysis": "Homepage shows featured products → Category pages for filtering → Product detail for full info → Cart for review → Checkout for completion. Natural flow reduces cognitive load."
+        },
+        "accessibility_considerations": {
+            "strengths": "High contrast ratios (4.5:1+), large touch targets (44px minimum), clear focus states, semantic HTML structure.",
+            "improvements": "Ensure all images have alt text, keyboard navigation support for all interactive elements, ARIA labels for icons."
+        },
+        "brand_perception": "Premium, trustworthy, and modern. The clean aesthetic with black/white palette positions Hair Palace as a high-quality, curated hair products store.",
+        "conversion_optimization": {
+            "strategies": [
+                "Prominent 'Add to Cart' buttons on product cards",
+                "Cart summary always visible during checkout",
+                "Minimal form fields to reduce abandonment",
+                "Guest checkout option (no account required)",
+                "Clear stock availability indicators"
+            ]
+        }
+    }
+}
