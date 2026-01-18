@@ -39,7 +39,7 @@ export default function Hero() {
                     {/* Positioned to align bottom with section, scaling up for impact */}
                     <div className="relative mt-8 h-[400px] w-full lg:absolute lg:bottom-0 lg:right-0 lg:mt-0 lg:h-[90%] lg:w-[55%]">
                         <Image
-                            src="/assets/hero-image.jpg"
+                            src="/assets/hero-generated.png"
                             alt="Models displaying premium wig collection"
                             fill
                             className="object-contain object-bottom lg:object-cover lg:object-center-bottom"
