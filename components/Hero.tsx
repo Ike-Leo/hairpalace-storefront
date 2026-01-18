@@ -7,7 +7,7 @@ export default function Hero() {
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/assets/hero-generated.png"
+                    src="/assets/hero-generated2.png"
                     alt="Luxury Hair Collection"
                     fill
                     className="object-cover object-[80%_center] lg:object-right"
@@ -21,13 +21,13 @@ export default function Hero() {
                 <div className="max-w-3xl">
                     {/* Main Heading mimicking the reference */}
                     <h1 className="font-serif text-5xl sm:text-6xl lg:text-8xl font-normal leading-[1.1] tracking-wide text-[#8B5E3C]">
-                        <span className="block drop-shadow-sm text-transparent bg-clip-text bg-gradient-to-r from-[#8B5E3C] to-[#C19A6B]">
+                        <span className="block drop-shadow-md text-white lg:drop-shadow-sm lg:text-transparent lg:bg-clip-text lg:bg-gradient-to-r lg:from-[#8B5E3C] lg:to-[#C19A6B]">
                             LUXURY
                         </span>
-                        <span className="block drop-shadow-sm text-transparent bg-clip-text bg-gradient-to-r from-[#8B5E3C] to-[#C19A6B]">
+                        <span className="block drop-shadow-md text-white lg:drop-shadow-sm lg:text-transparent lg:bg-clip-text lg:bg-gradient-to-r lg:from-[#8B5E3C] lg:to-[#C19A6B]">
                             HAIR
                         </span>
-                        <span className="block drop-shadow-sm text-transparent bg-clip-text bg-gradient-to-r from-[#8B5E3C] to-[#C19A6B]">
+                        <span className="block drop-shadow-md text-white lg:drop-shadow-sm lg:text-transparent lg:bg-clip-text lg:bg-gradient-to-r lg:from-[#8B5E3C] lg:to-[#C19A6B]">
                             COLLECTION
                         </span>
                     </h1>
