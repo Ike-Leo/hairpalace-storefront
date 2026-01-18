@@ -25,9 +25,20 @@ export default function Header() {
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
+          {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-black">Hair Palace</h1>
+              {/* Using Image component for the logo found in assets */}
+              <div className="relative h-12 w-auto aspect-[3/1]">
+                <Image
+                  src="/assets/logo.png"
+                  alt="Hair Palace"
+                  height={48}
+                  width={180}
+                  className="h-full w-auto object-contain"
+                  priority
+                />
+              </div>
             </Link>
           </div>
 
@@ -111,8 +122,8 @@ export default function Header() {
                 key={item.name}
                 href={item.href}
                 className={`block px-3 py-2 text-base font-medium transition-colors ${pathname === item.href
-                    ? 'text-black border-l-4 border-black bg-gray-50'
-                    : 'text-gray-700 hover:text-black hover:bg-gray-50'
+                  ? 'text-black border-l-4 border-black bg-gray-50'
+                  : 'text-gray-700 hover:text-black hover:bg-gray-50'
                   }`}
                 onClick={() => setMobileMenuOpen(false)}
               >
