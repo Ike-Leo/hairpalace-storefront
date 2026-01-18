@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import ProductCard from '@/components/ProductCard';
+import Hero from '@/components/Hero';
 import { fetchProducts } from '@/lib/api';
 import { ShoppingBag, Sparkles } from 'lucide-react';
 
@@ -10,36 +11,8 @@ export default async function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-gray-900 to-black text-white">
-        <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center">
-            <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-6xl">
-              Premium Hair Products
-              <span className="mt-2 block text-gray-400">For Your Perfect Look</span>
-            </h1>
-            <p className="mb-8 text-lg text-gray-300">
-              Discover our curated collection of premium hair care products.
-              Quality you can trust, results you'll love.
-            </p>
-            <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-              <Link
-                href="/products"
-                className="flex items-center justify-center gap-2 rounded-full bg-white px-8 py-3 font-semibold text-black transition-all hover:bg-gray-100 active:scale-95"
-              >
-                <ShoppingBag className="h-5 w-5" />
-                Shop Now
-              </Link>
-              <Link
-                href="/categories"
-                className="flex items-center justify-center gap-2 rounded-full border-2 border-white px-8 py-3 font-semibold text-white transition-all hover:bg-white/10 active:scale-95"
-              >
-                <Sparkles className="h-5 w-5" />
-                Browse Categories
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Hero Section */}
+      <Hero />
 
       {/* Featured Products Section */}
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">

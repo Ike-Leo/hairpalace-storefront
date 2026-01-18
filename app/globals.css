@@ -4,12 +4,41 @@
   :root {
     --background: #ffffff;
     --foreground: #171717;
+
+    /* Brand Colors extracted from reference image */
+    --color-brand-primary: #a67c6d;
+    /* Muted rose/brown */
+    --color-brand-secondary: #cfa89a;
+    /* Lighter rose blend */
+    --color-brand-dark: #5e3a31;
+    /* Darker brown for text/contrast */
+    --color-brand-cream: #fdfbf7;
   }
 
   body {
-    background-color: #f9fafb;
-    color: #171717;
+    background-color: var(--color-brand-cream);
+    color: var(--foreground);
+    font-family: var(--font-poppins), sans-serif;
   }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-playfair), serif;
+  }
+}
+
+@theme {
+  --font-serif: var(--font-playfair), serif;
+  --font-sans: var(--font-poppins), sans-serif;
+
+  --color-brand-primary: var(--color-brand-primary);
+  --color-brand-secondary: var(--color-brand-secondary);
+  --color-brand-dark: var(--color-brand-dark);
+  --color-brand-cream: var(--color-brand-cream);
 }
 
 @layer utilities {

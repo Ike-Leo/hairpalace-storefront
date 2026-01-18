@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { ShoppingBag, Menu, Search, X } from 'lucide-react';
 import { useState } from 'react';
 import { useCart } from '@/contexts/CartContext';
@@ -37,9 +38,8 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`px-3 py-2 text-sm font-medium transition-colors hover:text-gray-600 ${
-                    pathname === item.href ? 'text-black border-b-2 border-black' : 'text-gray-700'
-                  }`}
+                  className={`px-3 py-2 text-sm font-medium transition-colors hover:text-gray-600 ${pathname === item.href ? 'text-black border-b-2 border-black' : 'text-gray-700'
+                    }`}
                 >
                   {item.name}
                 </Link>
@@ -110,11 +110,10 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`block px-3 py-2 text-base font-medium transition-colors ${
-                  pathname === item.href
+                className={`block px-3 py-2 text-base font-medium transition-colors ${pathname === item.href
                     ? 'text-black border-l-4 border-black bg-gray-50'
                     : 'text-gray-700 hover:text-black hover:bg-gray-50'
-                }`}
+                  }`}
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.name}
