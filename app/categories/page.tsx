@@ -13,7 +13,7 @@ export default async function CategoriesPage() {
       </div>
 
       {categories.length > 0 ? (
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-3">
           {categories.map((category) => (
             <Link
               key={category._id}

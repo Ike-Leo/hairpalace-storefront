@@ -130,9 +130,8 @@ export default function ProductDetailPage() {
           {/* Stock Status */}
           <div className="mb-6">
             <span
-              className={`inline-flex rounded-full px-3 py-1 text-sm font-medium ${
-                product.inStock ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
-              }`}
+              className={`inline-flex rounded-full px-3 py-1 text-sm font-medium ${product.inStock ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
+                }`}
             >
               {getStockStatusText(product.totalStock)}
             </span>
@@ -150,13 +149,12 @@ export default function ProductDetailPage() {
                     key={variant._id}
                     onClick={() => setSelectedVariant(variant)}
                     disabled={variant.stockQuantity === 0}
-                    className={`rounded-lg border p-3 text-left text-sm transition-all ${
-                      selectedVariant?._id === variant._id
+                    className={`rounded-lg border p-3 text-left text-sm transition-all ${selectedVariant?._id === variant._id
                         ? 'border-black bg-black text-white'
                         : variant.stockQuantity === 0
-                        ? 'cursor-not-allowed border-gray-200 bg-gray-50 text-gray-400'
-                        : 'border-gray-300 bg-white hover:border-gray-400'
-                    }`}
+                          ? 'cursor-not-allowed border-gray-200 bg-gray-50 text-gray-400'
+                          : 'border-gray-300 bg-white hover:border-gray-400'
+                      }`}
                   >
                     <div className="font-medium">{variant.name}</div>
                     {variant.options.size && (
@@ -198,13 +196,12 @@ export default function ProductDetailPage() {
           <button
             onClick={handleAddToCart}
             disabled={!product.inStock || !selectedVariant || adding}
-            className={`flex items-center justify-center gap-2 rounded-lg px-8 py-4 font-semibold transition-all ${
-              added
+            className={`flex items-center justify-center gap-2 rounded-lg px-8 py-4 font-semibold transition-all ${added
                 ? 'bg-green-600 text-white'
                 : product.inStock
-                ? 'bg-black text-white hover:bg-gray-800 active:scale-95'
-                : 'cursor-not-allowed bg-gray-300 text-gray-500'
-            }`}
+                  ? 'bg-black text-white hover:bg-gray-800 active:scale-95'
+                  : 'cursor-not-allowed bg-gray-300 text-gray-500'
+              }`}
           >
             <ShoppingCart className="h-5 w-5" />
             {adding ? 'Adding...' : added ? 'Added to Cart!' : 'Add to Cart'}
@@ -216,7 +213,7 @@ export default function ProductDetailPage() {
       {relatedProducts.length > 0 && (
         <div className="mt-16">
           <h2 className="mb-6 text-2xl font-bold text-gray-900">Related Products</h2>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
             {relatedProducts.map((relatedProduct) => (
               <Link key={relatedProduct._id} href={`/products/${relatedProduct.slug}`}>
                 <div className="overflow-hidden rounded-2xl bg-white shadow-sm transition-all hover:shadow-lg">
